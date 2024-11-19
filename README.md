@@ -79,7 +79,7 @@ The [getting started](#getting-started) step used the [convenience script](./scr
 It supports some environment variables:
 
 - `DOTFILES_REPO_HOST`: Defaults to `https://github.com`.
-- `DOTFILES_USER`: Defaults to `felipecrs`.
+- `DOTFILES_USER`: Defaults to `lucasmodrich`.
 - `DOTFILES_BRANCH`: Defaults to `master`.
 
 For example, you can use it to clone and install the dotfiles repository at the `beta` branch with:
@@ -93,7 +93,7 @@ DOTFILES_BRANCH=beta sh -c "$(wget -qO- https://raw.githubusercontent.com/lucasm
 If you prefer not to use the convenience script to install the dotfiles, you can also do it manually:
 
 ```bash
-git clone https://github.com/felipecrs/dotfiles "$HOME/.dotfiles"
+git clone https://github.com/lucasmodrich/dotfiles "$HOME/.dotfiles"
 
 "$HOME/.dotfiles/install.sh"
 ```
@@ -107,7 +107,7 @@ If you are forking this repository, don't forget to change the following places:
 - [`README.md`](./README.md)
   - Replace all occurrences of `https://raw.githubusercontent.com/lucasmodrich/dotfiles/HEAD/scripts/install_dotfiles.sh` with `https://raw.githubusercontent.com/<your-username>/dotfiles/HEAD/scripts/install_dotfiles.sh`
 - [`scripts/install_dotfiles.sh`](./scripts/install_dotfiles.sh)
-  - Replace all occurrences of `felipecrs` with `<your-username>`
+  - Replace all occurrences of `lucasmodrich` with `<your-username>`
 - [`home/.chezmoi.yaml.tmpl`](./home/.chezmoi.yaml.tmpl)
   - Change the name and email to yours.
 
@@ -122,13 +122,13 @@ There are some scripts here to help you automate tricky activities when setting 
 If you already have this dotfiles [installed](#getting-started), you can use these scripts right away. Or, if you want to run it without installing the dotfiles, you can do something like:
 
 ```bash
-bash -c "$(curl -fsSL "https://raw.githubusercontent.com/felipecrs/dotfiles/master/scripts/<script-name>")" -- <arguments>
+bash -c "$(curl -fsSL "https://raw.githubusercontent.com/lucasmodrich/dotfiles/master/scripts/<script-name>")" -- <arguments>
 ```
 
 Just replace `<script-name>` and `<arguments>` with the desired values. Example:
 
 ```bash
-bash -c "$(curl -fsSL "https://raw.githubusercontent.com/felipecrs/dotfiles/master/scripts/create_alternative_chrome_shortcut.sh")" -- --force
+bash -c "$(curl -fsSL "https://raw.githubusercontent.com/lucasmodrich/dotfiles/master/scripts/create_alternative_chrome_shortcut.sh")" -- --force
 ```
 
 #### [`create_alternative_chrome_shortcut.sh`](scripts/create_alternative_chrome_shortcut.sh)
