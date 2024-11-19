@@ -1,4 +1,5 @@
-# Felipe Santos' dotfiles
+# Lucas' dotfiles
+(forked and modified from Felipe Santos' dotfiles)
 
 Bootstrap your Ubuntu in a single command!
 
